@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: rgb(204, 204, 204);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        ul {
+            padding: 1;
+            text-align: center;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .player_one, .player_two {
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1>My Playlist</h1>
 
+    <!-- Songs Playlist -->
+    <div>
+        <ul>
+            <li><a href="https://www.example.com/song1" target="_blank">Song 1</a></li>
+            <li><a href="https://www.example.com/song2" target="_blank">Song 2</a></li>
+            <li><a href="https://www.example.com/song3" target="_blank">Song 3</a></li>
+            <li><a href="https://www.example.com/song4" target="_blank">Song 4</a></li>
+            <li><a href="https://www.example.com/song5" target="_blank">Song 5</a></li>
+        </ul>
+    </div>
+
+    <h2>Now Playing...</h2>
+    <video class="player_one" controls>
+        <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>MP3 songs</h2>
+    <audio class="player_two" controls>
+        <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
